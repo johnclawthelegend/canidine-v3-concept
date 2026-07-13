@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C5530"/>
+      <stop offset="1" stop-color="#1E3C22"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" x="4" y="4" rx="13" fill="url(#lg)"/>
+  <path d="M20 28c-3 0-5-2.5-5-5.5 0-3.5 3-6 6.5-6 0.6-3 3.4-5 6.5-5 1.6 0 3 0.5 4 1.4C33 11.5 35 10 37.5 10c3.7 0 6.5 2.8 7 6.4 3.2 0.4 5.5 3 5.5 6.1 0 3-2 5.5-5 5.5H20z" fill="#F9F6F0"/>
+  <rect x="18" y="28" width="28" height="5" rx="1" fill="#CC5500"/>
+  <circle cx="32" cy="46" r="8" stroke="#F9F6F0" stroke-width="2.5" fill="none"/>
+  <circle cx="32" cy="46" r="2.5" fill="#CC5500"/>
+  <text x="72" y="34" font-family="Cabinet Grotesk, Inter, sans-serif" font-weight="900" font-size="26" fill="#1A1D1A" letter-spacing="-0.5">Can <tspan fill="#2C5530">I</tspan> Dine?</text>
+  <text x="72" y="50" font-family="Work Sans, sans-serif" font-size="10" letter-spacing="2" fill="#758066">DINE SAFELY · ANYWHERE</text>
+</svg>

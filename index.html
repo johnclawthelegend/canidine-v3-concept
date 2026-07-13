@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Can I Dine? V3 — a calmer service starts before the guest sits down." />
+    <meta name="theme-color" content="#163c2a" />
+    <link rel="icon" href="assets/canidine-mark.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Can I Dine? V3 — Clear choices. Calmer service.</title>
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement-dot"></span>
+      <span>V3 product concept · Connected to real public Canidine menus</span>
+      <a href="#live-menu">Explore a live menu <span>↘</span></a>
+    </div>
+
+    <header class="header" id="top">
+      <a class="logo" href="#top" aria-label="Can I Dine home"><img src="assets/canidine-logo.svg" alt="Can I Dine?" /></a>
+      <nav aria-label="Primary navigation">
+        <a href="#directory">Directory</a>
+        <a href="#platform">Platform</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <div class="header-actions">
+        <a class="text-link" href="https://canidine.com/login">Restaurant login</a>
+        <a class="small-cta" href="https://canidine.com/pricing">Get service-ready <span>↗</span></a>
+      </div>
+      <button class="menu-button" aria-expanded="false" aria-label="Open menu"><i></i><i></i></button>
+    </header>
+    <div class="mobile-menu" hidden>
+      <a href="#directory">Directory</a><a href="#platform">Platform</a><a href="#how">How it works</a><a href="#pricing">Pricing</a>
+      <a href="https://canidine.com/login">Restaurant login</a><a class="small-cta" href="https://canidine.com/pricing">Get service-ready</a>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="kicker">The service-readiness platform for dietary safety</span>
+          <h1>A calmer service starts <em>before the guest sits down.</em></h1>
+          <p>Can I Dine? turns your real menu into clear guest choices and clean kitchen handoffs—so one allergy at one table never puts the room in the weeds.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#live-menu">Try a real menu <span>↘</span></a>
+            <a class="secondary-button" href="#how">See how restaurants use it <span>→</span></a>
+          </div>
+          <div class="hero-proof">
+            <div><strong id="publicCount">27</strong><span>public menu profiles</span></div>
+            <div><strong id="allergenCount">32</strong><span>normalized restrictions</span></div>
+            <div><strong>10+</strong><span>guest languages</span></div>
+          </div>
+        </div>
+
+        <div class="hero-product" aria-label="Live Canidine menu preview">
+          <div class="hero-shape shape-one"></div><div class="hero-shape shape-two"></div>
+          <div class="guest-card">
+            <div class="guest-card-top"><div class="restaurant-monogram">T</div><div><span>REAL PUBLIC MENU</span><strong id="heroRestaurant">Terra Cucina</strong></div><button>EN⌄</button></div>
+            <div class="guest-welcome"><span>YOUR SAFETY PASSPORT</span><h3>Good evening, Maya.</h3><div><i>Gluten</i><i>Tree nuts</i><i>＋ Add</i></div></div>
+            <div class="hero-dishes" id="heroDishes">
+              <article><div><span class="clear-dot"></span><strong>Loading real menu…</strong><small>Connecting to Canidine</small></div><b class="tag clear">Checking</b></article>
+            </div>
+            <div class="boundary"><b>i</b><span>Results explain what was detected—not a medical guarantee.</span></div>
+          </div>
+          <div class="hero-float float-left"><b>✓</b><div><small>RESTAURANT EVIDENCE</small><strong>Menu reviewed</strong></div></div>
+          <div class="hero-float float-right"><small>DATA SOURCE</small><strong><i></i> Live public API</strong></div>
+        </div>
+      </section>
+
+      <section class="outcome-band">
+        <div><span>01</span><strong>Fewer tableside surprises</strong></div>
+        <div><span>02</span><strong>Faster confident ordering</strong></div>
+        <div><span>03</span><strong>Clearer kitchen handoffs</strong></div>
+        <div><span>04</span><strong>Evidence behind each result</strong></div>
+      </section>
+
+      <section class="directory-section" id="directory">
+        <div class="section-heading split-heading">
+          <div><span class="kicker">Explore real public menus</span><h2>Different kitchens.<br />One clear experience.</h2></div>
+          <div><p>This concept reads the same public restaurant directory guests use today. Pick a restaurant to load its real menu into the Safety Passport below.</p><div class="data-status" id="dataStatus"><i></i><span>Connecting to public Canidine data…</span></div></div>
+        </div>
+        <div class="directory-track" id="directoryTrack" aria-live="polite">
+          <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+        </div>
+        <div class="directory-actions"><button id="previousRestaurants" aria-label="Previous restaurants">←</button><button id="nextRestaurants" aria-label="Next restaurants">→</button><a href="https://canidine.com/directory">View full live directory <span>↗</span></a></div>
+      </section>
+
+      <section class="platform-section" id="platform">
+        <div class="section-heading centered">
+          <span class="kicker">One source of truth, two calm experiences</span>
+          <h2>The guest decision and the kitchen workflow stay connected.</h2>
+          <p>Choose real dietary needs, change restaurants, and see public menu data interpreted through a more transparent safety interface.</p>
+        </div>
+
+        <div class="product-shell" id="live-menu">
+          <div class="product-titlebar">
+            <div><span class="live-data-pill"><i></i> Real public data</span><strong>Can I Dine? product experience</strong></div>
+            <div class="experience-toggle" role="tablist"><button class="active" data-experience="guest" aria-selected="true">Guest experience</button><button data-experience="restaurant" aria-selected="false">Restaurant console</button></div>
+          </div>
+
+          <div class="experience guest-experience" data-experience-panel="guest">
+            <aside class="product-sidebar">
+              <img src="assets/canidine-mark.svg" alt="" />
+              <div class="selected-restaurant"><span id="sidebarMonogram">T</span><div><small>SELECTED RESTAURANT</small><strong id="sidebarRestaurant">Terra Cucina</strong><em id="sidebarCuisine">Italian</em></div></div>
+              <nav><button class="active">Personalized menu <span id="sidebarMenuCount">8</span></button><button>Restaurant details</button><button>Cross-contact policy</button></nav>
+              <div class="verified-card"><span>✓</span><div><small>PUBLIC MENU DATA</small><strong id="reviewStatus">Restaurant reviewed</strong><p id="reviewDate">Accuracy acknowledgement on file</p></div></div>
+            </aside>
+
+            <div class="guest-main">
+              <div class="guest-main-top"><div><span class="app-eyebrow">PERSONALIZED MENU</span><h3 id="guestGreeting">Good evening at Terra Cucina.</h3><p id="guestTagline">Rustic Italian, soulful plates</p></div><div class="app-actions"><button id="restaurantPickerButton">Change restaurant⌄</button><button id="languageCycle">Aあ English⌄</button></div></div>
+              <div class="restaurant-picker" id="restaurantPicker" hidden></div>
+
+              <div class="passport">
+                <div class="passport-top"><div class="passport-symbol">✦</div><div><span class="app-eyebrow">YOUR SAFETY PASSPORT</span><h4>What should this menu account for?</h4></div><small>Stored only in this browser demo</small></div>
+                <div class="restriction-chips" id="restrictionChips"></div>
+                <button class="add-restriction" id="addRestriction">＋ Add another restriction</button>
+                <div class="restriction-drawer" id="restrictionDrawer" hidden><div class="drawer-head"><strong>Choose dietary needs</strong><button id="closeRestriction">×</button></div><div id="allRestrictionOptions"></div></div>
+              </div>
+
+              <div class="menu-toolbar"><div><h4 id="menuTitle">Terra Cucina menu</h4><span id="menuMeta">Loading current menu…</span></div><div class="menu-filters"><button class="active" data-menu-filter="all">All</button><button data-menu-filter="clear">No conflict</button><button data-menu-filter="modify">Modify</button><button data-menu-filter="avoid">Avoid</button></div></div>
+              <div class="real-menu-grid" id="realMenuGrid"><div class="menu-loading"><i></i><span>Loading real restaurant menu…</span></div></div>
+              <div class="public-data-note"><span>i</span><p><strong>Safety boundary:</strong> “No conflict detected” means the current public restaurant data did not reveal a conflict with your selected profile. Always inform restaurant staff about severe allergies.</p></div>
+            </div>
+          </div>
+
+          <div class="experience restaurant-experience" data-experience-panel="restaurant" hidden>
+            <aside class="console-sidebar">
+              <div class="console-brand"><img src="assets/canidine-mark.svg" alt="" /><b>Can I Dine?</b></div>
+              <div class="console-location"><small>RESTAURANT</small><strong id="consoleRestaurant">Terra Cucina</strong></div>
+              <nav><button class="active"><span>◫</span> Service readiness</button><button><span>✓</span> Verification queue <b id="queueBadge">0</b></button><button><span>≡</span> Menu intelligence</button><button><span>⌁</span> Cross-contact map</button><button><span>◎</span> Guest activity</button></nav>
+              <div class="console-person"><i>KM</i><div><strong>Kitchen manager</strong><small>Demo workspace</small></div></div>
+            </aside>
+            <div class="console-main">
+              <div class="console-heading"><div><span class="app-eyebrow">SERVICE READINESS</span><h3 id="consoleGreeting">Terra Cucina is nearly ready.</h3><p>Resolve the evidence gaps that could slow service tonight.</p></div><button id="publishDemo">Publish verified updates</button></div>
+              <div class="readiness-cards"><article class="readiness-main"><div class="readiness-ring"><strong id="readinessScore">88<small>%</small></strong></div><div><span class="app-eyebrow">MENU READINESS</span><h4 id="readinessLabel">Almost ready for service</h4><p id="readinessCopy">Public menu details are being evaluated.</p><div class="readiness-bar"><i id="readinessBar"></i></div></div></article><article><span class="metric-symbol green">✓</span><small>INGREDIENT COVERAGE</small><strong id="ingredientCoverage">—</strong><p>items include ingredient detail</p></article><article><span class="metric-symbol amber">!</span><small>OPEN DECISIONS</small><strong id="openDecisions">—</strong><p>need human confirmation</p></article></div>
+              <div class="console-lower"><section class="verification-panel"><div><span class="app-eyebrow">HUMAN VERIFICATION QUEUE</span><h4>Decisions, not alerts.</h4></div><div id="verificationQueue"></div></section><aside class="source-panel"><span class="app-eyebrow">CURRENT SOURCE</span><h4 id="sourceRestaurant">Terra Cucina</h4><dl><div><dt>Public dishes</dt><dd id="sourceDishes">—</dd></div><div><dt>House ingredients</dt><dd id="sourceHouse">—</dd></div><div><dt>Restriction values</dt><dd id="sourceRestrictions">32</dd></div></dl><p>These figures are calculated from the restaurant’s current public Canidine payload.</p></aside></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-section" id="how">
+        <div class="section-heading split-heading light-heading"><div><span class="kicker">From menu file to calmer service</span><h2>Ready for the room in three clear steps.</h2></div><p>Keep the live site’s simplest promise: restaurants start with the menu they already have. V3 makes the outcome and ongoing workflow more visible.</p></div>
+        <div class="steps">
+          <article class="step active" data-step="0"><span>01</span><div><small>UPLOAD</small><h3>Bring the menu you already use.</h3><p>PDF, image, Word, Excel or PowerPoint. Canidine extracts dishes, ingredients and likely restrictions.</p></div></article>
+          <article class="step" data-step="1"><span>02</span><div><small>VERIFY</small><h3>Confirm what only your kitchen knows.</h3><p>Resolve preparation, supplier and cross-contact questions in a focused human queue.</p></div></article>
+          <article class="step" data-step="2"><span>03</span><div><small>PUBLISH</small><h3>Give every guest one clear menu.</h3><p>Share a branded QR experience with personalized choices, translations and exact handoffs.</p></div></article>
+        </div>
+        <div class="proof-window"><div class="proof-top"><i></i><i></i><i></i><span>Real Canidine restaurant workspace</span><b id="proofCaption">01 · Menu intelligence</b></div><img id="proofImage" src="assets/real-menu-console.webp" alt="Canidine menu management interface" /></div>
+      </section>
+
+      <section class="principles-section">
+        <div class="section-heading centered"><span class="kicker">Designed for the safety boundary</span><h2>Clear enough for a guest.<br />Defensible enough for a kitchen.</h2></div>
+        <div class="principles-grid">
+          <article><span>01</span><div class="principle-icon">⌘</div><h3>Normalize</h3><p>Turn guest language into a consistent restriction profile used across the whole experience.</p><small>One interpretation everywhere</small></article>
+          <article><span>02</span><div class="principle-icon">≋</div><h3>Detect</h3><p>Apply deterministic ingredient, preparation and cross-contact rules before contextual AI.</p><small>Repeatable and testable</small></article>
+          <article><span>03</span><div class="principle-icon">✦</div><h3>Explain</h3><p>Show the conflict, modification and evidence behind the result without inventing certainty.</p><small>Honest guest language</small></article>
+          <article><span>04</span><div class="principle-icon">✓</div><h3>Verify</h3><p>Give restaurant teams a focused place to confirm what only their kitchen can know.</p><small>Timestamped human evidence</small></article>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing">
+        <div class="section-heading split-heading"><div><span class="kicker">Real current pricing</span><h2>Start with one room.<br />Scale when ready.</h2></div><div><p>Pricing below is loaded from Canidine’s current public pricing endpoint. Founding-member availability and totals can change with the live service.</p><span class="pricing-status" id="pricingStatus"><i></i> Loading current plans…</span></div></div>
+        <div class="pricing-grid" id="pricingGrid"><div class="pricing-skeleton"></div><div class="pricing-skeleton"></div><div class="pricing-skeleton"></div></div>
+        <p class="pricing-fineprint" id="pricingFineprint"></p>
+      </section>
+
+      <section class="final-cta">
+        <div class="cta-mark"><img src="assets/canidine-mark.svg" alt="" /></div>
+        <span class="kicker">Clear choices. Calmer service.</span>
+        <h2>Make the menu ready<br />before the room fills.</h2>
+        <p>Give guests a clearer way to choose and your team a calmer way to serve.</p>
+        <div><a class="primary-button" href="https://canidine.com/pricing">Get service-ready <span>↗</span></a><a class="secondary-button" href="#live-menu">Try a real menu <span>↑</span></a></div>
+      </section>
+    </main>
+
+    <footer><a class="logo" href="#top"><img src="assets/canidine-logo.svg" alt="Can I Dine?" /></a><div><strong>Product concept</strong><a href="#directory">Directory</a><a href="#platform">Platform</a><a href="#pricing">Pricing</a></div><div><strong>Live Canidine</strong><a href="https://canidine.com">Current website</a><a href="https://canidine.com/login">Restaurant login</a><a href="https://canidine.com/privacy">Privacy</a></div><p>V3 concept · Real public data · No production writes</p></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

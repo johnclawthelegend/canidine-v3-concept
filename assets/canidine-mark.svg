@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C5530"/>
+      <stop offset="1" stop-color="#1E3C22"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g1)"/>
+  <!-- Chef hat -->
+  <path d="M20 28c-3 0-5-2.5-5-5.5 0-3.5 3-6 6.5-6 0.6-3 3.4-5 6.5-5 1.6 0 3 0.5 4 1.4C33 11.5 35 10 37.5 10c3.7 0 6.5 2.8 7 6.4 3.2 0.4 5.5 3 5.5 6.1 0 3-2 5.5-5 5.5H20z" fill="#F9F6F0"/>
+  <!-- Hat band -->
+  <rect x="18" y="28" width="28" height="5" rx="1" fill="#CC5500"/>
+  <!-- Plate / fork dot -->
+  <circle cx="32" cy="46" r="8" stroke="#F9F6F0" stroke-width="2.5" fill="none"/>
+  <circle cx="32" cy="46" r="2.5" fill="#CC5500"/>
+</svg>
