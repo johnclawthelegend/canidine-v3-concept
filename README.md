@@ -2,6 +2,8 @@
 
 A design-led Canidine product direction combining the current live site's complete conversion funnel with V2's clearer positioning, honest safety language, guest Safety Passport, and restaurant Service Readiness workflow.
 
+**Live prototype:** https://canidine-v3-concept.vercel.app
+
 ## Data boundary
 
 The prototype reads only Canidine's existing public endpoints through a same-origin Vercel rewrite:
